@@ -1,0 +1,2 @@
+[Tue, 06 Sep 2016 16:10:26 -0400] Creating tmp file for get category path
+[Tue, 06 Sep 2016 16:10:26 -0400] Openning tmp file

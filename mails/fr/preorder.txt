@@ -1,0 +1,7 @@
+Hi {firstname} {lastname},
+
+Preorder details
+Votre commande sera prête après {date_avaliable}. Contactez-nous si vous avez.
+
+
+{shop_url} réalisé par PrestaShop™

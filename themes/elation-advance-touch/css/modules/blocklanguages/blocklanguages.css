@@ -1,0 +1,28 @@
+.topheader #languages-block-top { float: right; line-height: 19px; text-transform: uppercase; font-weight: bold; color: #eee; }
+.topheader #languages-block-top .current { padding: 0px 5px 0 15px; border-right: 1px solid #eee; cursor: pointer; }
+.topheader #languages-block-top ul { display: none; }
+.topheader .cur-label { display: none; }
+
+.topheader #languages-block-top { position: relative; }
+.topheader #languages-block-top ul { position: absolute; top: 24px; right: 0; width: 140px; background-color: #eee; border: 1px solid #ccc; box-shadow: 0 0 5px rgba(0,0,0,0.4); }
+.topheader #languages-block-top ul:after { 
+	content: "\f0d8"; 
+	font-family: "FontAwesome";
+	position: absolute;
+	top: -2px;
+	right: 10px;
+	font-size: 23px;
+	color: #eee;
+	line-height: 0;
+	height: 5px;
+}
+.topheader #languages-block-top ul li { padding: 5px 10px; border-bottom: 1px solid #CCC; text-transform: none; font-weight: normal; text-align: right; }
+.topheader #languages-block-top ul li:last-child { border-bottom: none; }
+.topheader #languages-block-top ul li a { display: block; color: #333; }
+.topheader #languages-block-top ul li span { color: #333; }
+.topheader #languages-block-top ul li a:hover { color: #999; }
+
+
+@media (max-width: 1024px) {
+	.topheader #languages-block-top { display: none; }
+}

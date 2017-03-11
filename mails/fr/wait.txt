@@ -1,0 +1,8 @@
+Bonjour {firstname} {lastname},
+
+{shop_name} est heureux de vous informer que les produits que vous attendez sont déjà en stock.
+Le produit de votre liste d'attente vient d’ apparaître en stock: {product_list}
+Cliquez sur le lien pour modifier votre liste d'attente "My waitlist" section of your customer account by clicking "My account" on our shop
+
+
+{shop_url} réalisé par PrestaShop™

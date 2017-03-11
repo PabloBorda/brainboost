@@ -1,0 +1,111 @@
+.blockblog-content{
+	width:80%;
+	float:left;
+	margin-left:2%;
+	font-size:12px;
+	
+}
+
+.blockblog-menu{width:15%;
+			 float:left;
+			 padding:5px}
+
+ul.leftMenu  {
+	font-size:12px;
+    list-style: none outside none;
+    margin: 1px 0 0;
+    padding: 0 0 16px;
+	margin: -1px 0 0;
+}
+
+
+.blockblog-content div.menu-content{
+    border: 1px solid #CCCCCC;
+    margin: 10px 5px 0;
+    padding: 10px;
+}
+
+.blockblog-content h3.title-block-content{
+    margin-top:5px;
+    font-size:1.25em;
+    color:#E8871E;
+}
+
+
+ul.leftMenu li {
+    /*background: url("../images/left_menu_dashed.png") no-repeat scroll 0 0 transparent;*/
+    height: 30px;
+    margin: -1px 0 0;
+    padding: 0;
+   
+}
+
+ul.leftMenu li a {
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    height: 26px;
+    line-height: 1.2em;
+    padding: 10px 0 0 19px;
+}
+ul.leftMenu li a.selected{ 
+	background-color:#F4E6C9
+}
+
+
+.margin-item-form-top-left{margin-top:8px;}
+.margin-item-form-top-left .badge{font-weight: bold}
+.margin-item-form-top-left .badge a{color:white;text-decoration: underline}
+
+
+
+
+ul.leftMenuIN  {
+    font-size:12px;
+    list-style: none outside none;
+    margin: 1px 0 0;
+    padding: 0 0 16px;
+}
+
+
+ul.leftMenuIN li {
+    padding: 0;
+    float:left;
+    margin-bottom: 5px;
+
+}
+
+ul.leftMenuIN li a {
+    border: 1px solid #CCCCCC;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 10px;
+}
+ul.leftMenuIN li a.selected{
+    background-color:#F4E6C9;
+}
+
+
+
+
+.items-content{
+    width:100%;
+    float:left;
+    font-size:12px;
+
+
+}
+
+.items-content div.menu-content{
+    border: 1px solid #CCCCCC;
+    margin: 10px 5px 0;
+    padding: 10px;
+}
+
+.items-content h3.title-block-content{
+    margin-top:5px;
+    font-size:1.25em;
+    color:#E8871E;
+}

@@ -1,0 +1,8 @@
+Hi {firstname} {lastname},
+
+{shop_name} is glad to inform you that the product you are waiting for is already in stock. 
+The product from your waiting list has appeared in stock: {product_list}.
+Click on this link to edit your waiting list "My waitlist" section of your customer account by clicking "My account" on our shop
+
+
+{shop_url} Powered by PrestaShop™

@@ -1,0 +1,22 @@
+*  ELATION + PRESTASHOP THEME LICENCE
+*  Elation Advance Touch Theme
+
+*  *************************************************************************  * 
+*  * (d) elation3ase theme development                                     *  *
+*  * (c) elation3ase, elationbase.com                                      *  *
+*  * (i) elationbase@gmail.com                                             *  *
+*  * Theme Licence Agreement                                               *  *
+*  *************************************************************************  *
+
+This License grants you, the Purchaser, a non-exclusive, non-transferrable right to make use of the work you acquire. Work (the theme and modules).
+
+Your use of the Work is subject to the following conditions:
+(1) Your use of the Work is limited to a single application.
+(2) You may use the Work alone or you may incorporate the Work into another work you are creating.
+(3) Unless you have our prior written consent, you must not directly or indirectly license, sub-license, sell or resell or provide for free the Work. All of these things are referred to as Resale.
+(4) You may use the Work in a work which you are creating for your own purposes or for your client who has asked you to create it.
+(5) You may incorporate the Work in a work which is created for Resale by you or your client. You may alliterate the look and feel and change the code.
+(6) You may display the Work, and make the Work available for use by an unlimited number of users, in conjunction with a web site service that you host on behalf of your clients. When using the Work through a web site service, you may make unlimited copies of the Work but you must procure that your clients do not reproduce or use the Work in another application.
+(7) Notwithstanding the restriction on Resale, if you acquire the Work on behalf of your client you may recoup from your client the cost of acquiring the Work.
+(8) If the whole, or part, of the Work has been created using materials which are the subject of a GNU General Public License (GPL), your use of the Work (or part Work) is subject to the specific terms of the GPL in place of the foregoing conditions (to the extent the GPL applies).
+

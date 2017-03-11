@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "elationbase";
+  src:url("elationbase.eot");
+  src:url("elationbase.eot?#iefix") format("embedded-opentype"),
+    url("elationbase.woff") format("woff"),
+    url("elationbase.ttf") format("truetype"),
+    url("elationbase.svg#elationbase") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "elationbase" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="eb-icon-"]:before,
+[class*=" eb-icon-"]:before {
+  font-family: "elationbase" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.eb-icon-bubble-love:before {
+  content: "a";
+}
+.eb-icon-cart-in:before {
+  content: "b";
+}
+.eb-icon-garbage:before {
+  content: "c";
+}
+.eb-icon-database:before {
+  content: "d";
+}
+.eb-icon-email:before {
+  content: "e";
+}
+.eb-icon-love:before {
+  content: "f";
+}
+.eb-icon-link:before {
+  content: "g";
+}
+.eb-icon-lock:before {
+  content: "h";
+}
+.eb-icon-user:before {
+  content: "i";
+}
+.eb-icon-pin-2:before {
+  content: "j";
+}
+.eb-icon-map-user:before {
+  content: "k";
+}
+.eb-icon-pictures:before {
+  content: "l";
+}
+.eb-icon-picture:before {
+  content: "m";
+}
+.eb-icon-settings-1:before {
+  content: "n";
+}
+.eb-icon-sync:before {
+  content: "o";
+}
+.eb-icon-atom:before {
+  content: "t";
+}
+.eb-icon-checkmark:before {
+  content: "u";
+}
+.eb-icon-map:before {
+  content: "v";
+}
+.eb-icon-share:before {
+  content: "y";
+}
+.eb-icon-calendar:before {
+  content: "A";
+}
+.eb-icon-view:before {
+  content: "B";
+}
+.eb-icon-email-2:before {
+  content: "C";
+}
+.eb-icon-pin-1:before {
+  content: "D";
+}
+.eb-icon-like:before {
+  content: "E";
+}
+.eb-icon-lab:before {
+  content: "F";
+}
+.eb-icon-heart:before {
+  content: "G";
+}
+.eb-icon-key:before {
+  content: "H";
+}
+.eb-icon-photo:before {
+  content: "I";
+}
+.eb-icon-search:before {
+  content: "J";
+}
+.eb-icon-star:before {
+  content: "K";
+}
+.eb-icon-tag:before {
+  content: "L";
+}
+.eb-icon-trash:before {
+  content: "M";
+}
+.eb-icon-truck:before {
+  content: "N";
+}
+.eb-icon-bomb-bug:before {
+  content: "R";
+}
+.eb-icon-bubble-comment:before {
+  content: "S";
+}
+.eb-icon-camera-1:before {
+  content: "T";
+}
+.eb-icon-clock-1:before {
+  content: "U";
+}
+.eb-icon-dashboard:before {
+  content: "V";
+}
+.eb-icon-shield:before {
+  content: "W";
+}
+.eb-icon-icecream:before {
+  content: "X";
+}
+.eb-icon-smiley:before {
+  content: "Y";
+}
+.eb-icon-headset:before {
+  content: "Z";
+}
+.eb-icon-home:before {
+  content: "0";
+}
+.eb-icon-photo-pictures:before {
+  content: "1";
+}
+.eb-icon-controls:before {
+  content: "2";
+}
+.eb-icon-settings-2:before {
+  content: "3";
+}
+.eb-icon-lab-1:before {
+  content: "4";
+}
+.eb-icon-clock-2:before {
+  content: "5";
+}
+.eb-icon-cube:before {
+  content: "6";
+}
+.eb-icon-bulb:before {
+  content: "7";
+}
+.eb-icon-camera:before {
+  content: "8";
+}
+.eb-icon-cloud-1:before {
+  content: "9";
+}
+.eb-icon-food:before {
+  content: "!";
+}
+.eb-icon-fire:before {
+  content: "\"";
+}
+.eb-icon-paperplane:before {
+  content: "#";
+}
+.eb-icon-settings:before {
+  content: "$";
+}
+.eb-icon-t-shirt:before {
+  content: "%";
+}
+.eb-icon-vallet:before {
+  content: "&";
+}
+.eb-icon-dropbox:before {
+  content: "'";
+}
+.eb-icon-digg:before {
+  content: ")";
+}
+.eb-icon-ebay:before {
+  content: "+";
+}
+.eb-icon-facebook:before {
+  content: ",";
+}
+.eb-icon-linkedin-alt:before {
+  content: "@";
+}
+.eb-icon-path:before {
+  content: "]";
+}
+.eb-icon-paypal:before {
+  content: "^";
+}
+.eb-icon-picasa:before {
+  content: "`";
+}
+.eb-icon-skype:before {
+  content: "\e000";
+}
+.eb-icon-tumblr:before {
+  content: "\e006";
+}
+.eb-icon-vimeo:before {
+  content: "\e009";
+}
+.eb-icon-cart-out:before {
+  content: "w";
+}
+.eb-icon-iphone:before {
+  content: "x";
+}
+.eb-icon-laptop:before {
+  content: "z";
+}
+.eb-icon-phone:before {
+  content: "}";
+}
+.eb-icon-shop:before {
+  content: "~";
+}
+.eb-icon-arrow-down:before {
+  content: "O";
+}
+.eb-icon-arrow-left:before {
+  content: "P";
+}
+.eb-icon-arrow-right:before, .icon-chevron-right {
+  content: "Q";
+}
+.eb-icon-arrow-up:before {
+  content: "r";
+}
+.eb-icon-cart:before {
+  content: "s";
+}
+.eb-icon-delete:before {
+  content: "q";
+}
+.eb-icon-menu:before {
+  content: "|";
+}
+.eb-icon-menu-active:before {
+  content: "=";
+}
+.eb-icon-minus:before {
+  content: "/";
+}
+.eb-icon-plus:before {
+  content: "(";
+}
+.eb-icon-card:before {
+  content: ")";
+}
+.eb-icon-summary:before {
+  content: "-";
+}
+.eb-icon-box:before {
+  content: "_";
+}
+
+
+.icon-trash:before {
+  content: "c";
+  font-family: "elationbase";
+}
+.icon-chevron-right:before {
+  content: "Q";
+  font-family: "elationbase";
+}
+.icon-chevron-left:before {
+  content: "P";
+  font-family: "elationbase";
+}
+.icon-map-marker:before {
+	content: "j";
+  font-family: "elationbase";
+}
+.icon-phone:before {
+	content: "x";
+  font-family: "elationbase";
+}
+.icon-envelope-alt:before {
+	content: "e";
+  font-family: "elationbase";
+}
+.icon-minus:before {
+	content: "/";
+	font-family: "elationbase";
+}
+.icon-plus:before {
+	content: "(";
+	font-family: "elationbase";
+}
+.icon-rotate-right:before, .icon-repeat:before {
+	content: "o";
+	font-family: "elationbase";
+}
+#cart_block #cart_block_list .remove_link a:before, #cart_block #cart_block_list .ajax_cart_block_remove_link:before, #layer_cart .cross:before {
+	content: "q";
+	font-family: "elationbase";
+}
+.icon-home:before {
+	content: "v";
+	font-family: "elationbase";
+}
+.breadcrumb a.home i { vertical-align: -5px; font-size: 17px; }
+
+#footer #newsletter_block_left .form-group .button-small:before {
+	content: "#";
+	font-family: "elationbase";
+}

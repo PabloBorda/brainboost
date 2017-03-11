@@ -1,0 +1,7 @@
+Hi {firstname} {lastname},
+
+Preorder details
+Your order will be prepared after {date_avaliable}. Contact us, if you have questions.
+
+
+{shop_url} Powered by PrestaShop™

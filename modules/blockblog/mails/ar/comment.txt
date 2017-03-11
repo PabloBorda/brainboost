@@ -1,0 +1,21 @@
+Hi,
+
+You have received a message from {name} via your shop: {shop_name}
+
+Details of message:
+
+{title_post}
+
+See comment here: {com_url}
+
+Customer Name: {name}
+
+Customer E-mail: {email}
+
+Comment:
+
+{message}
+
+
+
+{shop_url} powered by PrestaShop™

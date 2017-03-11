@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>ebaddthis</name>
+	<displayName><![CDATA[Elation Base Theme - AddThis Module]]></displayName>
+	<version><![CDATA[1.0]]></version>
+	<description><![CDATA[AddThis social sharing in product pages.]]></description>
+	<author><![CDATA[elation3ase]]></author>
+	<tab><![CDATA[elation_base_modules]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,23 @@
+/*********************************************************************
+					Maintenance Page Styles
+**********************************************************************/
+#maintenance {
+  margin: 50px auto; max-width: 800px; }
+  #maintenance .logo {
+    margin: 0 0 31px 0; }
+  #maintenance h1 {
+    font: 600 28px/34px arial, sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d6d4d4;
+    padding: 0 0 14px 0;
+    margin: 0 0 19px 0; }
+  #maintenance #message {
+    font: 600 16px/31px arial, sans-serif;
+    padding: 0 0 0 18px;
+    color: #555454; }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }

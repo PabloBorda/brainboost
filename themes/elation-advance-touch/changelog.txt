@@ -1,0 +1,60 @@
+VERSION 1.8 (August 27, 2014)
+Top navigation new layout no dropdown (Advance Theme Controller module configurable)
+Top Navigation auto hides overflow links including on resize window
+Bugfix not able to add email Newsletter Block module on mobile devices
+Bugfix dark version contact us textbox text color 
+
+VERSION 1.7 (August 10, 2014)
+New feature - New top navigation always visible with two layouts (mega-mene and drop-down navigation styles)
+Update- Homepage slider non-full height for portrait devices
+Compatibility check for PS 1.6.0.9 
+Ramdom UI improvements
+
+VERSION 1.6 (July 10, 2014)
+Compatibility check for PS 1.6.0.8
+Ramdom UI improvements
+
+VERSION 1.5 (June 5, 2014)
+New feature - Product listing "quick buy / view" Google Images style
+New maintenance page design
+Bugfix - Catalog mode, duplicated short description and hidden share buttons
+Ramdom UI improvements
+
+VERSION 1.4 (May 20, 2014)
+New feature - Product zoom now is touch enabled and a bubble effect for non-touch devices
+Now theme is translated to Russian, Chinese-simplified, Dutch, Danish & Swedish
+Parallax effect for non-touch devices only
+Improvements on footer navigation for smartphones
+Scroll to top function
+Navigation open scroll to view
+Support of product comments module
+Ramdom UI improvements
+
+VERSION 1.3 (May 16, 2014)
+Now theme is translated to French, Spanish, German, Italian and Portuguese
+Bugfix: ebhomeblocks missing image upload folder
+PS Bugfix: fixed layout error on product page when enable
+Ramdom UI improvements
+
+VERSION 1.2 (May 11, 2014)
+New Feature - Touch based product thumbs carrousel
+Module ebaddthis new default link share to Google +
+Module Update - parallax modules now accept HTML content
+Theme Controller Module Update, now control top navigation layout and colors
+Random UI improvements
+
+Version 1.1 (May 4, 2014)
+Phone version UI improvements
+Improved ui in theme's dark version
+ebaddthis - show/hide on scroll
+New module - ebaddthis - social sharing
+Random ui updates
+improved home promos slider on mobile devices
+Improved homepage header and slider
+Bugfix: Fixed attachment background image disappear in chrome when hover on product images 
+Improved sticky navigation on homepage
+category image - improved
+Improved category image size
+Improved product grid layout
+Fixed - EB Theme Controller navigation background color
+

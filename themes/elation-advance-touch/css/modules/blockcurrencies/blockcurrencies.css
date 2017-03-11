@@ -1,0 +1,28 @@
+.topheader #currencies-block-top { float: right; line-height: 19px; text-transform: uppercase; color: #ccc; }
+.topheader #currencies-block-top .current { color: #eee; padding: 0px 15px 0 5px; cursor: pointer; }
+.topheader #currencies-block-top ul { display: none; }
+
+.topheader #setCurrency { position: relative; }
+.topheader .currencies_ul { position: absolute; top: 24px; width: 140px; background-color: #eee; border: 1px solid #ccc; box-shadow: 0 0 5px rgba(0,0,0,0.4); }
+.topheader .currencies_ul:after { 
+	content: "\f0d8";
+	font-family: "FontAwesome";
+	position: absolute;
+	top: -2px;
+	left: 11px;
+	font-size: 23px;
+	color: #eee;
+	line-height: 0;
+	height: 5px;
+}
+.topheader .currencies_ul li { padding: 5px 10px; border-bottom: 1px solid #CCC; text-transform: none; font-weight: normal; }
+.topheader .currencies_ul li span { color: #333; }
+.topheader .currencies_ul li:last-child { border-bottom: none; }
+.topheader .currencies_ul li a { display: block; color: #333; }
+.topheader .currencies_ul li span { color: #333; }
+.topheader .currencies_ul li a:hover { color: #999; }
+
+
+@media (max-width: 1024px) {
+	.topheader #currencies-block-top { display: none; }
+}

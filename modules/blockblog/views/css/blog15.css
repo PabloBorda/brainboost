@@ -1,0 +1,25 @@
+
+/* bootstrap */
+
+.col-sm-5-custom, .col-sm-7-custom, .col-sm-12-custom, .col-sm-4-custom, .col-md-2-custom, .col-sm-2-custom,
+.col-md-10-custom, .col-sm-10-custom, .col-xs-9-custom{
+    float:left;
+    min-height: 1px;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    position: relative;
+}
+
+.col-md-2-custom, .col-sm-2-custom{width: 24.6667%}
+.col-md-10-custom, .col-sm-10-custom{width:75.3333%}
+
+.col-xs-9-custom {
+    width: 70%;
+}
+
+
+
+
+
+
+

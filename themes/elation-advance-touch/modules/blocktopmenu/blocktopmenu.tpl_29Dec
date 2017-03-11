@@ -1,0 +1,106 @@
+{if $MENU != ''}
+	<!-- Menu -->
+	
+<a class="trigger-nav" href="#"></a>
+<div class="eb-top-nav-wrapper animate-fast clearfix">
+	<div id="block_top_menu" class="sf-contener clearfix">
+		<div class="cat-title">{l s="Categories" mod="blocktopmenu"}</div>
+		<ul class="sf-menu clearfix menu-content">
+ <li>
+ <div class="col-xs-8 col-sm-8">
+                            
+             <div style="clear:both;height:20px;"></div>
+
+                                <div id="header_logo">
+								<a href="//brainboost.ie/" title="BrainBoost">
+									<img class="logo animate" src="//brainboost.ie/img/europort-logo-1469719481.jpg" alt="BrainBoost">
+								</a>
+							    </div>
+                                        
+                                      {hook h="displaySocialLoginButtons"}
+
+                                <div class="col-xs-6 col-sm-6 nav_top_box">
+                                   
+                                  <div class="col-xs-4 col-sm-4">
+
+                                        {hook h="displayNav"}
+
+                                  </div>
+                                </div>
+            </li>                
+			{$MENU}
+			{if $MENU_SEARCH}
+				<li class="sf-search noBack mobile-block">
+					<form id="searchbox" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="get">
+						<p>
+							<input type="hidden" name="controller" value="search" />
+							<input type="hidden" value="position" name="orderby"/>
+							<input type="hidden" value="desc" name="orderway"/>
+							<input type="text" name="search_query" value="{if isset($smarty.get.search_query)}{$smarty.get.search_query|escape:'html':'UTF-8'}{/if}" placeholder='{l s="Search" mod="blocktopmenu"}' />
+						</p>
+					</form>
+				</li>
+			{/if}
+            <!-- Block languages module -->
+            {if count($languages) > 1}
+                <li id="languages-block-top" class="languages-block mobile-block">
+                    {foreach from=$languages key=k item=language name="languages"}
+                        {if $language.iso_code == $lang_iso}
+                            <a>
+                            	{l s='Language' mod='blocklanguages'}: <strong>{$language.name|regex_replace:"/\s.*$/":""}</strong>
+                            </a>
+                        {/if}
+                    {/foreach}
+                    <ul id="first-languages" class="languages-block_ul mobile-block">
+                        {foreach from=$languages key=k item=language name="languages"}
+                            <li {if $language.iso_code == $lang_iso}class="selected"{/if}>
+                            {if $language.iso_code != $lang_iso}
+                                {assign var=indice_lang value=$language.id_lang}
+                                {if isset($lang_rewrite_urls.$indice_lang)}
+                                    <a href="{$lang_rewrite_urls.$indice_lang|escape:'html':'UTF-8'}" title="{$language.name}">
+                                {else}
+                                    <a href="{$link->getLanguageLink($language.id_lang)|escape:'html':'UTF-8'}" title="{$language.name}">
+                                {/if}
+                            {/if}
+                                    {$language.name|regex_replace:"/\s.*$/":""}
+                            {if $language.iso_code != $lang_iso}
+                                </a>
+                            {/if}
+                            </li>
+                        {/foreach}
+                    </ul>
+                </li>
+            {/if}
+            <!-- /Block languages module -->
+            <!-- Block currencies module -->
+            {if count($currencies) > 1}
+				<form id="setCurrency" action="{$request_uri}" method="post">
+                <li id="currencies-block-top">
+                        <a>
+                            <input type="hidden" name="id_currency" id="id_currency" value=""/>
+                            <input type="hidden" name="SubmitCurrency" value="" />
+                            {l s='Currency' mod='blockcurrencies'}:
+                            {foreach from=$currencies key=k item=f_currency}
+                                {if $cookie->id_currency == $f_currency.id_currency}<strong>{$f_currency.iso_code}</strong>{/if}
+                            {/foreach}
+                        </a>
+                        <ul id="first-currencies" class="currencies_ul toogle_content">
+                            {foreach from=$currencies key=k item=f_currency}
+                                <li {if $cookie->id_currency == $f_currency.id_currency}class="selected"{/if}>
+                                    <a href="javascript:setCurrency({$f_currency.id_currency});" rel="nofollow" title="{$f_currency.name}">
+                                        {$f_currency.name}
+                                    </a>
+                                </li>
+                            {/foreach}
+                        </ul>
+                	</li>
+                </form>
+            {/if}
+            <!-- /Block currencies module -->
+		</ul>
+	</div>
+	<!--/ Menu -->
+
+
+{/if}
+</div>
