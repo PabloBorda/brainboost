@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
-class IndexControllerCore extends FrontController
+class IndexControllerCore extends ProductController
 {
     public $php_self = 'index';
 
@@ -35,12 +35,17 @@ class IndexControllerCore extends FrontController
     public function initContent()
     {
         parent::initContent();
-        $this->addJS(_THEME_JS_DIR_.'index.js');
-
-        $this->context->smarty->assign(array('HOOK_HOME' => Hook::exec('displayHome'),
-            'HOOK_HOME_TAB' => Hook::exec('displayHomeTab'),
-            'HOOK_HOME_TAB_CONTENT' => Hook::exec('displayHomeTabContent')
-        ));
-        $this->setTemplate(_PS_THEME_DIR_.'index.tpl');
+       
     }
+  
+  
+    public function init(){
+      $_GET['id_product']=113;
+      parent::init();
+    }  
+  
+    
+  
+  
+  
 }
