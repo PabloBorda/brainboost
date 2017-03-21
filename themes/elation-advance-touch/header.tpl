@@ -67,7 +67,7 @@
         <script src="/modules/welcomescreenvideo/views/js/front.js"></script>
 	</head>
 	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{/if}{if $hide_right_column} hide-right-column{/if}{if $content_only} content_only{/if} lang_{$lang_iso}">
-{if $page_name==index}
+{if $page_name==index || $page_name==product}
 <div class="overlay">
 <video width="600" height="400" autoplay="" muted="" loop="">
 								   <source src="//brainboost.ie/themes/elation-advance-touch/img/flame.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
@@ -93,7 +93,7 @@
 						<div class="container">
 							<div class="row">
 								{hook h="displayBanner"}
-							{if $page_name == 'index'}
+							{if $page_name == 'index' || $page_name=='product'}
 							  <div class="row" style='position:relative;background: transparent url("//brainboost.ie/modules/ebhomeblock1/img/8ca754e5e200b58da7f7fe997ce12a05.jpg"); min-height: 872.5px;min-height: 872.5px;background-repeat: no-repeat;background-position: center center;width: 100%;height: 100%;background-size: cover;display: block;'>
 							  	<!--<p class="logo_header" style='width:150px;height:150px;position:absolute;left:5%;top:100px;'>
 									<a href="http://brainboost_new2/" title="BrainBoost">
