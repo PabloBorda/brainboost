@@ -832,7 +832,7 @@ $(".accordion_product-title").click(function(){
 
 	$(".accordion_product-content").hide();
 	$(".accordion_product-title").css("background-color","#2d2d2d");
-	$(this).next(".accordion_product-content").show();
+	$(this).next(".accordion_product-content").slideDown();
 	$(this).css("background-color","#3068cc");
 	
 })
