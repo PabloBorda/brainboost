@@ -503,7 +503,7 @@
 			</section>
 			<!--end Data sheet -->
 		{/if}
-		{if $product->description}
+		{*if $product->description}
 			<!-- More info -->
 			<section class="page-product-box more_info">
 				<h3 class="page-product-heading more_info_heading">{l s='More info'}</h3>{/if}
@@ -512,7 +512,7 @@
 					<div  class="rte">{$product->description}</div>
 			</section>
 			<!--end  More info -->
-		{/if}
+		{/if*}
 		<!--HOOK_PRODUCT_TAB -->
 		<section class="page-product-box">
 			{$HOOK_PRODUCT_TAB}
@@ -692,6 +692,151 @@
 		{/if}
 	{/if}
 </div>
+<style>
+.weight{
+    float: right;
+    text-align: right;
+    margin-left: -5% !important;
+}
+.weighttest{
+	color:#fff;
+	padding:21px !important;
+}
+.accordion_product.components {
+   
+    margin: 0 auto;
+    height:auto;
+    width: 670px;
+}
+
+.accordion_product.components > ul > li,
+.components .accordion_product-title,
+.components .accordion_product-content,
+.components .accordion_product-separator {
+    float: none;
+}
+
+.accordion_product.components > ul > li {
+    //background-color: #1f1f1f;
+    //margin-right: -0px;
+    //margin-bottom: -318px
+}
+
+.components .accordion_product-select:checked ~ .accordion_product-separator {
+    margin-right: 0px;
+    margin-bottom: 318px;
+}
+
+.components .accordion_product-title,
+.components .accordion_product-select  {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    width: 90%;
+    height: 40px;
+    font-size: 25px;
+}
+
+.components .accordion_product-title span {
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+.components .accordion_product-select:hover ~ .accordion_product-title,
+.components .accordion_product-select:checked ~ .accordion_product-title {
+    background-color: #3068cc;
+}
+
+.components .accordion_product-title span  {	
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    margin-bottom: 0px;
+    line-height: 40px;
+}
+
+.components .accordion_product-content {
+    background-color: #3e3e3e;
+    color: #f5f2f0;
+    height: 316px;
+    width: 90%;
+    //padding: 27px;
+	display:none;
+}
+
+.components .accordion_product-title,
+.components .accordion_product-select:checked ~ .accordion_product-content {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+/* Do not change following properties, they aren't 
+generated automatically and are common for each slider. */
+.accordion_product {
+    overflow: hidden;
+}
+
+.accordion_product > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 101%;
+}
+
+.accordion_product > ul > li,
+.accordion_product-title {
+    position: relative;
+}
+
+.accordion_product-select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.accordion_product-title span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.accordion_product-content {
+    position: relative;
+    overflow: auto;
+}
+
+.accordion_product-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+div.radio{
+opacity:0;
+}
+.accordion_product-title:hover{
+	background-color:#3068cc !important;
+	cursor:pointer;
+}
+</style>
+<script>
+$(".accordion_product-title").click(function(){
+
+	$(".accordion_product-content").hide();
+	$(".accordion_product-title").css("background-color","#2d2d2d");
+	$(this).next(".accordion_product-content").slideDown();
+	$(this).css("background-color","#3068cc");
+	
+})
+</script>
 {strip}
 {strip}
 {if isset($smarty.get.ad) && $smarty.get.ad}
