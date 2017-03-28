@@ -120,41 +120,7 @@
 					</div>-->
 					<div class="container" id="eb-top">
 					
-	<div class="//eb-top-nav-wrapper clearfix">
-		<div id="block_top_menu1" class="sf-contener clearfix">
-			<div class="cat-title">{l s="Categories" mod="blocktopmenu"}</div>
-				<ul class="sf-menu clearfix menu-content">
-				<li>
-					<div class="col-xs-8 col-sm-8">
-										
-						 <div style="clear:both;height:20px;"></div>
 
-											<div id="header_logo">
-											<a href="//brainboost.ie/" title="BrainBoost">
-												<img class="logo animate" src="//brainboost.ie/img/europort-logo-1469719481.jpg" alt="BrainBoost">
-											</a>
-											</div>
-													
-												  {hook h="displaySocialLoginButtons"}
-
-											
-				</li>  
-						
-					   
-						<li>
-							<div class="col-xs-4 col-sm-4 pull-right">
-
-									{hook h="displayNav"}
-
-							</div>
-						</li>   
-				</ul>
-					</div>
-	<!--/ Menu -->
-
-
-
-</div>
 						<div class="row">
 							
 							<div class="eb-nav">
