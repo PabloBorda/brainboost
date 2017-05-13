@@ -149,13 +149,7 @@
 						{/if}
 						<div id="center_column" class="center_column col-xs-12 col-sm-{12 - $left_column_size - $right_column_size}">
                         <div class="navigation">
-                            <div class="col-xs-4 col-sm-4">
-								<div id="header_logo">
-									<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
-										<img class="logo animate" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"/>
-									</a>
-								</div>
-                            </div>
+                           
                             <div class="col-xs-2 col-sm-2">
                             &nbsp;
                             </div>

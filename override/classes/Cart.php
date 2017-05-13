@@ -30,7 +30,7 @@ class Cart extends CartCore {
     * date: 2016-08-26 12:34:57
     * version: 3.1.0
     */
-    public function checkQuantities() {
+    public function checkQuantities($return_product = false) {
         require_once(_PS_MODULE_DIR_ . "belvg_preorderproducts/classes/ProductPreorder.php");
         if (Configuration::get('PS_CATALOG_MODE')) {
             return FALSE;
