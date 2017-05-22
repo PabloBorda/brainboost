@@ -1,5 +1,5 @@
 <?php
-require '../../vendor/autoload.php';	//autoload.php from elastic-search
+require dirname(__FILE__).'/../../vendor/autoload.php';	//autoload.php from elastic-search
 class ElasticSearch
 {
 private $_client;
