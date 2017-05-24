@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:49:41
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:27:59
          compiled from "/home/brainboo/public_html/themes/elation-advance-touch/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:34153111058b5aa25613cf0-25274438%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6397228945925602f2de2d8-22193520%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fa0021c498f966bfe402979b61b3fecfc216e487' => 
     array (
       0 => '/home/brainboo/public_html/themes/elation-advance-touch/footer.tpl',
-      1 => 1486138161,
+      1 => 1494682887,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '34153111058b5aa25613cf0-25274438',
+  'nocache_hash' => '6397228945925602f2de2d8-22193520',
   'function' => 
   array (
   ),
@@ -20,15 +20,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'content_only' => 0,
     'right_column_size' => 0,
     'HOOK_RIGHT_COLUMN' => 0,
-    'logo_url' => 0,
-    'shop_name' => 0,
-    'HOOK_FOOTER' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aa25637392_88269752',
+  'unifunc' => 'content_5925602f3070f9_89382914',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aa25637392_88269752')) {function content_58b5aa25637392_88269752($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5925602f3070f9_89382914')) {function content_5925602f3070f9_89382914($_smarty_tpl) {?>
 
 <?php if (!$_smarty_tpl->tpl_vars['content_only']->value) {?>
 					</div><!-- #center_column -->
@@ -41,19 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div><!-- #columns -->
 			</div><!-- .columns-container -->
 			<!-- Footer -->
-			<div class="footer-container">
-				<footer id="footer"  class="container">
-					<div id="footer_logo">
-						<img class="logo animate" src="<?php echo $_smarty_tpl->tpl_vars['logo_url']->value;?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->value, ENT_QUOTES, 'UTF-8', true);?>
-"/>
-					</div>
-					<div class="row">
-						<?php echo $_smarty_tpl->tpl_vars['HOOK_FOOTER']->value;?>
-
-					</div>
-				</footer>
-			</div><!-- #footer -->
+			
 		</div><!-- #page -->
 		<a class="top"></a>
 <?php }?>

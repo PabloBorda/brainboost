@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:10:40
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:27:56
          compiled from "/home/brainboo/public_html/modules/ebthemecontroller/ebthemecontroller.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:60239438558b5a1005561c1-47733843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9058056935925602c732559-57769252%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '60239438558b5a1005561c1-47733843',
+  'nocache_hash' => '9058056935925602c732559-57769252',
   'function' => 
   array (
   ),
@@ -45,9 +45,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5a10060d8a3_03397601',
+  'unifunc' => 'content_5925602c8e6465_39240134',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5a10060d8a3_03397601')) {function content_58b5a10060d8a3_03397601($_smarty_tpl) {?><!-- Theme Controller -->
+<?php if ($_valid && !is_callable('content_5925602c8e6465_39240134')) {function content_5925602c8e6465_39240134($_smarty_tpl) {?><!-- Theme Controller -->
 <?php if (isset($_smarty_tpl->tpl_vars['fontsbody']->value)) {?>
 <link href="//fonts.googleapis.com/css?family=<?php echo $_smarty_tpl->tpl_vars['fontsbody']->value;?>
 :100,400" rel='stylesheet' type='text/css'>

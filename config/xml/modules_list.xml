@@ -123,10 +123,15 @@
 		<module name="bluesnap"/>
 		<module name="bpostshm"/>
 		<module name="brainify"/>
+		<module name="cartsguru"/>
+		<module name="ccbill"/>
+		<module name="chargeback"/>
 		<module name="chronopost"/>
+		<module name="comnpay"/>
 		<module name="correos"/>
 		<module name="cubyn"/>
 		<module name="desjardins"/>
+		<module name="digitaleo"/>
 		<module name="dotpay"/>
 		<module name="dpdfrance"/>
 		<module name="easymarketing"/>
@@ -160,6 +165,7 @@
 		<module name="ogone"/>
 		<module name="onehopsmsservice"/>
 		<module name="openpayprestashop"/>
+		<module name="oyst"/>
 		<module name="packlinkpro"/>
 		<module name="pagseguro"/>
 		<module name="paygreen"/>
@@ -170,10 +176,12 @@
 		<module name="payplug"/>
 		<module name="payulatam"/>
 		<module name="pilipay"/>
+		<module name="prestashoptoquickbooks"/>
 		<module name="protectedshops"/>
 		<module name="psphipay"/>
 		<module name="pudo"/>
 		<module name="realexredirect"/>
+		<module name="rees46"/>
 		<module name="reforestaction"/>
 		<module name="salesmanago"/>
 		<module name="selldorado"/>
@@ -192,6 +200,7 @@
 		<module name="stripe_official"/>
 		<module name="themoneytizer"/>
 		<module name="trustedshops"/>
+		<module name="trustedshopsintegration"/>
 		<module name="twenga"/>
 		<module name="wirecardceecheckoutseamless"/>
 		<module name="worldpay"/>

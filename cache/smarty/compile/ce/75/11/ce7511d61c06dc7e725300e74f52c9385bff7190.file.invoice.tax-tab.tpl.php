@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 18:04:39
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-23 01:34:54
          compiled from "/home/brainboo/public_html/pdf/invoice.tax-tab.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:65233283258b5bbb786d6a4-89523363%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:49796912592383ae755536-24544957%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '65233283258b5bbb786d6a4-89523363',
+  'nocache_hash' => '49796912592383ae755536-24544957',
   'function' => 
   array (
   ),
@@ -30,9 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5bbb78dd1e0_67136609',
+  'unifunc' => 'content_592383ae7c3602_47238455',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5bbb78dd1e0_67136609')) {function content_58b5bbb78dd1e0_67136609($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_592383ae7c3602_47238455')) {function content_592383ae7c3602_47238455($_smarty_tpl) {?>
 
 <!--  TAX DETAILS -->
 <?php if ($_smarty_tpl->tpl_vars['tax_exempt']->value) {?>

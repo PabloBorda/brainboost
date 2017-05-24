@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:52:25
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-23 01:34:25
          compiled from "/home/brainboo/public_html/modules/bestkit_opc/views/templates/front/order-payment.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:185485137458b5aac95cb939-49415783%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7745918585923839127dfe0-19647060%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '185485137458b5aac95cb939-49415783',
+  'nocache_hash' => '7745918585923839127dfe0-19647060',
   'function' => 
   array (
   ),
@@ -35,9 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aac96d7083_45651092',
+  'unifunc' => 'content_59238391339c11_39006469',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aac96d7083_45651092')) {function content_58b5aac96d7083_45651092($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include '/home/brainboo/public_html/tools/smarty/plugins/modifier.escape.php';
+<?php if ($_valid && !is_callable('content_59238391339c11_39006469')) {function content_59238391339c11_39006469($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include '/home/brainboo/public_html/tools/smarty/plugins/modifier.escape.php';
 ?>
 
 <div id="opc_payments">

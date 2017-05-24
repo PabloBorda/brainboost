@@ -24,6 +24,8 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
+
+
 class OrderConfirmationControllerCore extends FrontController
 {
     public $ssl = true;
@@ -34,6 +36,12 @@ class OrderConfirmationControllerCore extends FrontController
     public $reference;
     public $secure_key;
 
+  
+  
+  
+  
+  
+  
     /**
      * Initialize order confirmation controller
      * @see FrontController::init()
@@ -142,7 +150,11 @@ class OrderConfirmationControllerCore extends FrontController
 
                 return Hook::exec('displayOrderConfirmation', $params);
             }
+           
+            
         }
         return false;
     }
+  
+  
 }

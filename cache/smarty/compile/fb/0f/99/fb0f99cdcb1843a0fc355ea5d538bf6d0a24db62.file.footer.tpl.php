@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 18:04:39
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-23 01:34:54
          compiled from "/home/brainboo/public_html/pdf/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:174968033658b5bbb7805eb9-91689126%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1842922972592383ae6f0373-18617510%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '174968033658b5bbb7805eb9-91689126',
+  'nocache_hash' => '1842922972592383ae6f0373-18617510',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5bbb7841b75_71758213',
+  'unifunc' => 'content_592383ae72bf38_13452057',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5bbb7841b75_71758213')) {function content_58b5bbb7841b75_71758213($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_592383ae72bf38_13452057')) {function content_592383ae72bf38_13452057($_smarty_tpl) {?>
 <table style="width: 100%;">
 	<tr>
 		<td style="text-align: center; font-size: 6pt; color: #444;  width:87%;">

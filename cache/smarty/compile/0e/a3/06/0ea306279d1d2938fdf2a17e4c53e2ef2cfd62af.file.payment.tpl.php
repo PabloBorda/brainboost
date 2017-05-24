@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:52:36
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-23 01:34:33
          compiled from "/home/brainboo/public_html/modules/bitpay/views/templates/hook/payment.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:112878840158b5aad43916f9-06408502%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1562273115592383994a7426-04175540%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '112878840158b5aad43916f9-06408502',
+  'nocache_hash' => '1562273115592383994a7426-04175540',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aad439e928_41868858',
+  'unifunc' => 'content_592383994b2a43_32164855',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aad439e928_41868858')) {function content_58b5aad439e928_41868858($_smarty_tpl) {?><div class="row">
+<?php if ($_valid && !is_callable('content_592383994b2a43_32164855')) {function content_592383994b2a43_32164855($_smarty_tpl) {?><div class="row">
   <div class="col-xs-12 col-md-6">
     <p class="payment_module">
             <a href="<?php echo $_smarty_tpl->tpl_vars['this_path']->value;?>

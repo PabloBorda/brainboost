@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:49:40
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:27:57
          compiled from "/home/brainboo/public_html/themes/elation-advance-touch/modules/belvg_preorderproducts/views/frontend/preorderproducts.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:203685252358b5aa24241e24-79948121%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17709633775925602d2a40f4-76530156%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '203685252358b5aa24241e24-79948121',
+  'nocache_hash' => '17709633775925602d2a40f4-76530156',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aa242c7074_63886584',
+  'unifunc' => 'content_5925602d348754_91475794',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aa242c7074_63886584')) {function content_58b5aa242c7074_63886584($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5925602d348754_91475794')) {function content_5925602d348754_91475794($_smarty_tpl) {?>
 
 <!-- Belvg_PreOrderProducts -->
 

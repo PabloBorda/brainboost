@@ -27,16 +27,7 @@
 				</div><!-- #columns -->
 			</div><!-- .columns-container -->
 			<!-- Footer -->
-			<div class="footer-container">
-				<footer id="footer"  class="container">
-					<div id="footer_logo">
-						<img class="logo animate" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"/>
-					</div>
-					<div class="row">
-						{$HOOK_FOOTER}
-					</div>
-				</footer>
-			</div><!-- #footer -->
+			
 		</div><!-- #page -->
 		<a class="top"></a>
 {/if}
