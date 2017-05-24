@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:42:07
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:47:10
          compiled from "/home/brainboo/public_html/themes/elation-advance-touch/maintenance.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14706794045925637f618956-40747092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:841952908592564ae3e8329-93498191%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14706794045925637f618956-40747092',
+  'nocache_hash' => '841952908592564ae3e8329-93498191',
   'function' => 
   array (
   ),
@@ -31,9 +31,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5925637f68dd90_91075663',
+  'unifunc' => 'content_592564ae4870d7_80621440',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5925637f68dd90_91075663')) {function content_5925637f68dd90_91075663($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_592564ae4870d7_80621440')) {function content_592564ae4870d7_80621440($_smarty_tpl) {?>
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

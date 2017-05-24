@@ -1,0 +1,7 @@
+[17-May-2017 12:50:54 UTC] PHP Fatal error:  Uncaught exception 'Elasticsearch\Common\Exceptions\NoNodesAvailableException' with message 'No alive nodes found in your cluster' in /home/brainboo/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ConnectionPool/StaticNoPingConnectionPool.php:51
+Stack trace:
+#0 /home/brainboo/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Transport.php(71): Elasticsearch\ConnectionPool\StaticNoPingConnectionPool->nextConnection()
+#1 /home/brainboo/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Transport.php(89): Elasticsearch\Transport->getConnection()
+#2 /home/brainboo/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(230): Elasticsearch\Transport->performRequest('GET', '/_search', Array, NULL, Array)
+#3 /home/brainboo/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#4 /home/brainboo/public_html/vendor/guzzlehttp/ringphp/src/Future/Compl in /home/brainboo/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ConnectionPool/StaticNoPingConnectionPool.php on line 51
