@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:49:41
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:27:58
          compiled from "/home/brainboo/public_html/themes/elation-advance-touch/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:99408444458b5aa25476524-18308556%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7483871995925602e8003a8-44532123%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e7d2b16ca7ecf89a0f6bc5f11ba1e666f2835a93' => 
     array (
       0 => '/home/brainboo/public_html/themes/elation-advance-touch/header.tpl',
-      1 => 1486138161,
+      1 => 1494682887,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '99408444458b5aa25476524-18308556',
+  'nocache_hash' => '7483871995925602e8003a8-44532123',
   'function' => 
   array (
   ),
@@ -46,15 +46,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'left_column_size' => 0,
     'HOOK_LEFT_COLUMN' => 0,
     'right_column_size' => 0,
-    'base_dir' => 0,
-    'shop_name' => 0,
-    'logo_url' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aa25587b30_96084148',
+  'unifunc' => 'content_5925602ea2a572_05624986',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aa25587b30_96084148')) {function content_58b5aa25587b30_96084148($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/home/brainboo/public_html/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_5925602ea2a572_05624986')) {function content_5925602ea2a572_05624986($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/home/brainboo/public_html/tools/smarty/plugins/function.implode.php';
 ?>
 
 <!DOCTYPE HTML>
@@ -145,7 +142,7 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 <?php }?><?php if (isset($_smarty_tpl->tpl_vars['body_classes']->value)&&count($_smarty_tpl->tpl_vars['body_classes']->value)) {?> <?php echo smarty_function_implode(array('value'=>$_smarty_tpl->tpl_vars['body_classes']->value,'separator'=>' '),$_smarty_tpl);?>
 <?php }?><?php if ($_smarty_tpl->tpl_vars['hide_left_column']->value) {?> hide-left-column<?php }?><?php if ($_smarty_tpl->tpl_vars['hide_right_column']->value) {?> hide-right-column<?php }?><?php if ($_smarty_tpl->tpl_vars['content_only']->value) {?> content_only<?php }?> lang_<?php echo $_smarty_tpl->tpl_vars['lang_iso']->value;?>
 ">
-<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='index') {?>
+<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='index'||$_smarty_tpl->tpl_vars['page_name']->value=='product') {?>
 <div class="overlay">
 <video width="600" height="400" autoplay="" muted="" loop="">
 								   <source src="//brainboost.ie/themes/elation-advance-touch/img/flame.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
@@ -174,7 +171,7 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 							<div class="row">
 								<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>"displayBanner"),$_smarty_tpl);?>
 
-							<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='index') {?>
+							<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='index'||$_smarty_tpl->tpl_vars['page_name']->value=='product') {?>
 							  <div class="row" style='position:relative;background: transparent url("//brainboost.ie/modules/ebhomeblock1/img/8ca754e5e200b58da7f7fe997ce12a05.jpg"); min-height: 872.5px;min-height: 872.5px;background-repeat: no-repeat;background-position: center center;width: 100%;height: 100%;background-size: cover;display: block;'>
 							  	<!--<p class="logo_header" style='width:150px;height:150px;position:absolute;left:5%;top:100px;'>
 									<a href="http://brainboost_new2/" title="BrainBoost">
@@ -201,44 +198,7 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 					</div>-->
 					<div class="container" id="eb-top">
 					
-	<div class="//eb-top-nav-wrapper clearfix">
-		<div id="block_top_menu1" class="sf-contener clearfix">
-			<div class="cat-title"><?php echo smartyTranslate(array('s'=>"Categories",'mod'=>"blocktopmenu"),$_smarty_tpl);?>
-</div>
-				<ul class="sf-menu clearfix menu-content">
-				<li>
-					<div class="col-xs-8 col-sm-8">
-										
-						 <div style="clear:both;height:20px;"></div>
 
-											<div id="header_logo">
-											<a href="//brainboost.ie/" title="BrainBoost">
-												<img class="logo animate" src="//brainboost.ie/img/europort-logo-1469719481.jpg" alt="BrainBoost">
-											</a>
-											</div>
-													
-												  <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>"displaySocialLoginButtons"),$_smarty_tpl);?>
-
-
-											
-				</li>  
-						
-					   
-						<li>
-							<div class="col-xs-4 col-sm-4 pull-right">
-
-									<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>"displayNav"),$_smarty_tpl);?>
-
-
-							</div>
-						</li>   
-				</ul>
-					</div>
-	<!--/ Menu -->
-
-
-
-</div>
 						<div class="row">
 							
 							<div class="eb-nav">
@@ -273,17 +233,7 @@ $_smarty_tpl->tpl_vars['js_uri']->_loop = true;
 						<div id="center_column" class="center_column col-xs-12 col-sm-<?php echo 12-$_smarty_tpl->tpl_vars['left_column_size']->value-$_smarty_tpl->tpl_vars['right_column_size']->value;?>
 ">
                         <div class="navigation">
-                            <div class="col-xs-4 col-sm-4">
-								<div id="header_logo">
-									<a href="<?php echo $_smarty_tpl->tpl_vars['base_dir']->value;?>
-" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->value, ENT_QUOTES, 'UTF-8', true);?>
-">
-										<img class="logo animate" src="<?php echo $_smarty_tpl->tpl_vars['logo_url']->value;?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->value, ENT_QUOTES, 'UTF-8', true);?>
-"/>
-									</a>
-								</div>
-                            </div>
+                           
                             <div class="col-xs-2 col-sm-2">
                             &nbsp;
                             </div>

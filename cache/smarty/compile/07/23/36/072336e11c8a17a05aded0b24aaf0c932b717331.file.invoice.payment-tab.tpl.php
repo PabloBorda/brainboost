@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 18:04:39
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-23 01:34:54
          compiled from "/home/brainboo/public_html/pdf/invoice.payment-tab.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:53861917558b5bbb7b4ec15-42124638%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:285761629592383ae9dd5e9-18020347%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '53861917558b5bbb7b4ec15-42124638',
+  'nocache_hash' => '285761629592383ae9dd5e9-18020347',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5bbb7b761f3_87596125',
+  'unifunc' => 'content_592383ae9f3292_29617388',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5bbb7b761f3_87596125')) {function content_58b5bbb7b761f3_87596125($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_592383ae9f3292_29617388')) {function content_592383ae9f3292_29617388($_smarty_tpl) {?>
 <table id="payment-tab" width="100%">
 	<tr>
 		<td class="payment center small grey bold" width="44%"><?php echo smartyTranslate(array('s'=>'Payment Method','pdf'=>'true'),$_smarty_tpl);?>

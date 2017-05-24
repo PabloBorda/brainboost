@@ -24,6 +24,9 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
+
+require dirname(__FILE__).'/../ds/elasticsearch/ElasticSearch.php';
+
 abstract class PaymentModuleCore extends Module
 {
     /** @var int Current order's id */
@@ -32,6 +35,13 @@ abstract class PaymentModuleCore extends Module
     public $currencies_mode = 'checkbox';
 
     const DEBUG_MODE = false;
+	
+	
+	  protected function insertOrderToElasticSearch($order){
+			$o = exec("php ".dirname(__FILE__)."/../ds/elasticsearch/insertOrderCommand.php '".json_encode($order)."'");
+			//file_put_contents(dirname(__FILE__)."/testing.txt","RESPONSE: ".$o,FILE_APPEND);  
+							
+    }
 
     public function install()
     {
@@ -44,6 +54,7 @@ abstract class PaymentModuleCore extends Module
             if (!$this->addCheckboxCurrencyRestrictionsForModule()) {
                 return false;
             }
+
         } elseif ($this->currencies_mode == 'radio') {
             if (!$this->addRadioCurrencyRestrictionsForModule()) {
                 return false;
@@ -657,15 +668,26 @@ abstract class PaymentModuleCore extends Module
                         PrestaShopLogger::addLog('PaymentModule::validateOrder - Hook validateOrder is about to be called', 1, null, 'Cart', (int)$id_cart, true);
                     }
 
-                    // Hook validate order
-                    Hook::exec('actionValidateOrder', array(
+                    
+									 $a = array(
                         'cart' => $this->context->cart,
                         'order' => $order,
                         'customer' => $this->context->customer,
                         'currency' => $this->context->currency,
                         'orderStatus' => $order_status
-                    ));
-
+                    );
+									// Hook validate order
+                    Hook::exec('actionValidateOrder',$a);
+                    
+									try {
+									  //file_put_contents(dirname(__FILE__)."/testing.txt","New Order to ElasticSearch: ",FILE_APPEND);
+									  $res = $this->insertOrderToElasticSearch($a);
+									  //file_put_contents(dirname(__FILE__)."/testing.txt","New Order to ElasticSearch: ".$res,FILE_APPEND);
+									} catch(Exception $e) {
+  									echo "Exception caught with message: " . $e->getMessage() . "\n";
+									}
+									
+									
                     foreach ($this->context->cart->getProducts() as $product) {
                         if ($order_status->logable) {
                             ProductSale::addProductSale((int)$product['id_product'], (int)$product['cart_quantity']);
@@ -1004,4 +1026,8 @@ abstract class PaymentModuleCore extends Module
         }
         return '';
     }
+	
+	
+	
+	
 }

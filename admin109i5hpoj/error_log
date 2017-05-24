@@ -9,3 +9,6 @@
 [07-Mar-2017 16:46:34 Europe/Dublin] PHP Strict Standards:  Declaration of Cart::checkQuantities() should be compatible with CartCore::checkQuantities($return_product = false) in /home/brainboo/public_html/override/classes/Cart.php on line 196
 [07-Mar-2017 16:46:47 Europe/Dublin] PHP Strict Standards:  Declaration of Cart::checkQuantities() should be compatible with CartCore::checkQuantities($return_product = false) in /home/brainboo/public_html/override/classes/Cart.php on line 196
 [08-Mar-2017 10:08:27 Europe/Dublin] PHP Strict Standards:  Declaration of Cart::checkQuantities() should be compatible with CartCore::checkQuantities($return_product = false) in /home/brainboo/public_html/override/classes/Cart.php on line 196
+[19-May-2017 15:10:13 Europe/Dublin] PHP Notice:  Undefined offset: 0 in /home/brainboo/public_html/modules/bitpay/bitpay.php on line 355
+[19-May-2017 15:18:13 Europe/Dublin] PHP Notice:  Undefined offset: 0 in /home/brainboo/public_html/modules/bitpay/bitpay.php on line 355
+[19-May-2017 15:22:58 Europe/Dublin] PHP Notice:  Undefined offset: 0 in /home/brainboo/public_html/modules/bitpay/bitpay.php on line 355

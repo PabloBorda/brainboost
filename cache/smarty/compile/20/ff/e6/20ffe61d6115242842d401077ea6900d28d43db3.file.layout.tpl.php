@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:49:41
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:27:58
          compiled from "/home/brainboo/public_html/themes/elation-advance-touch/layout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:70347444958b5aa25433769-79172791%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2827562765925602e7352a4-92275703%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '70347444958b5aa25433769-79172791',
+  'nocache_hash' => '2827562765925602e7352a4-92275703',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aa25471505_48598270',
+  'unifunc' => 'content_5925602e7f1e65_28713918',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aa25471505_48598270')) {function content_58b5aa25471505_48598270($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5925602e7f1e65_28713918')) {function content_5925602e7f1e65_28713918($_smarty_tpl) {?>
 
 <?php $_smarty_tpl->tpl_vars['left_column_size'] = new Smarty_variable(0, null, 0);?><?php $_smarty_tpl->tpl_vars['right_column_size'] = new Smarty_variable(0, null, 0);?>
 <?php if (isset($_smarty_tpl->tpl_vars['HOOK_LEFT_COLUMN']->value)&&trim($_smarty_tpl->tpl_vars['HOOK_LEFT_COLUMN']->value)&&!$_smarty_tpl->tpl_vars['hide_left_column']->value) {?><?php $_smarty_tpl->tpl_vars['left_column_size'] = new Smarty_variable(3, null, 0);?><?php }?>

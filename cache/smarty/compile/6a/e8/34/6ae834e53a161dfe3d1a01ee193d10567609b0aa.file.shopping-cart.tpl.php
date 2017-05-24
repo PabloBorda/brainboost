@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:52:25
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-23 01:34:25
          compiled from "/home/brainboo/public_html/modules/bestkit_opc/views/templates/front/shopping-cart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:181952415958b5aac96e0864-36036079%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1524836594592383913403d0-90805755%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '181952415958b5aac96e0864-36036079',
+  'nocache_hash' => '1524836594592383913403d0-90805755',
   'function' => 
   array (
   ),
@@ -90,9 +90,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aac9c30f08_43322734',
+  'unifunc' => 'content_59238391899e56_37027375',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aac9c30f08_43322734')) {function content_58b5aac9c30f08_43322734($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include '/home/brainboo/public_html/tools/smarty/plugins/modifier.escape.php';
+<?php if ($_valid && !is_callable('content_59238391899e56_37027375')) {function content_59238391899e56_37027375($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include '/home/brainboo/public_html/tools/smarty/plugins/modifier.escape.php';
 ?>
 <div id="shopping_cart_ajax">
 <script type="text/javascript">

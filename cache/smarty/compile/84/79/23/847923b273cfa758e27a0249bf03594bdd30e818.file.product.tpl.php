@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-02-28 16:49:40
+<?php /* Smarty version Smarty-3.1.19, created on 2017-05-24 11:27:57
          compiled from "/home/brainboo/public_html/themes/elation-advance-touch/product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149057743758b5aa2491ca47-20431231%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:19836029085925602db94c88-55611743%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '847923b273cfa758e27a0249bf03594bdd30e818' => 
     array (
       0 => '/home/brainboo/public_html/themes/elation-advance-touch/product.tpl',
-      1 => 1486138161,
+      1 => 1494682887,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149057743758b5aa2491ca47-20431231',
+  'nocache_hash' => '19836029085925602db94c88-55611743',
   'function' => 
   array (
   ),
@@ -70,32 +70,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'imageIds' => 0,
     'imageTitle' => 0,
     'mediumSize' => 0,
-    'quantity_discounts' => 0,
-    'display_discount_price' => 0,
-    'quantity_discount' => 0,
-    'discountPrice' => 0,
-    'qtyProductPrice' => 0,
-    'features' => 0,
-    'feature' => 0,
-    'HOOK_PRODUCT_TAB' => 0,
-    'HOOK_PRODUCT_TAB_CONTENT' => 0,
-    'accessories' => 0,
-    'accessory' => 0,
-    'accessoryLink' => 0,
-    'homeSize' => 0,
-    'HOOK_PRODUCT_FOOTER' => 0,
-    'attachments' => 0,
-    'attachment' => 0,
-    'customizationFormTarget' => 0,
-    'customizationFields' => 0,
-    'field' => 0,
-    'key' => 0,
-    'pictures' => 0,
-    'pic_dir' => 0,
-    'img_dir' => 0,
-    'customizationField' => 0,
-    'textFields' => 0,
-    'img_ps_dir' => 0,
     'base_dir' => 0,
     'attribute_anchor_separator' => 0,
     'attributesCombinations' => 0,
@@ -104,20 +78,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'currencyFormat' => 0,
     'currencyBlank' => 0,
     'combinations' => 0,
+    'display_discount_price' => 0,
     'combinationImages' => 0,
+    'customizationFields' => 0,
     'ecotaxTax_rate' => 0,
+    'img_ps_dir' => 0,
     'no_tax' => 0,
     'stock_management' => 0,
     'tax_rate' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_58b5aa2539ed81_11204039',
+  'unifunc' => 'content_5925602e6050b7_73033389',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58b5aa2539ed81_11204039')) {function content_58b5aa2539ed81_11204039($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include '/home/brainboo/public_html/tools/smarty/plugins/function.math.php';
+<?php if ($_valid && !is_callable('content_5925602e6050b7_73033389')) {function content_5925602e6050b7_73033389($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include '/home/brainboo/public_html/tools/smarty/plugins/function.math.php';
 if (!is_callable('smarty_modifier_date_format')) include '/home/brainboo/public_html/tools/smarty/plugins/modifier.date_format.php';
-if (!is_callable('smarty_function_cycle')) include '/home/brainboo/public_html/tools/smarty/plugins/function.cycle.php';
-if (!is_callable('smarty_function_counter')) include '/home/brainboo/public_html/tools/smarty/plugins/function.counter.php';
 ?>
 <div class='split_here'></div>
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
@@ -712,379 +687,152 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 	<?php }?>
 		<?php }?>
 
-	<div class="eb-wrapper mohit">
-	<?php if (!$_smarty_tpl->tpl_vars['content_only']->value) {?>
-<?php if ((isset($_smarty_tpl->tpl_vars['quantity_discounts']->value)&&count($_smarty_tpl->tpl_vars['quantity_discounts']->value)>0)) {?>
-			<!-- quantity discount -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading"><?php echo smartyTranslate(array('s'=>'Volume discounts'),$_smarty_tpl);?>
-</h3>
-				<div id="quantityDiscount">
-					<table class="std table-product-discounts">
-						<thead>
-							<tr>
-								<th><?php echo smartyTranslate(array('s'=>'Quantity'),$_smarty_tpl);?>
-</th>
-								<th><?php if ($_smarty_tpl->tpl_vars['display_discount_price']->value) {?><?php echo smartyTranslate(array('s'=>'Price'),$_smarty_tpl);?>
-<?php } else { ?><?php echo smartyTranslate(array('s'=>'Discount'),$_smarty_tpl);?>
-<?php }?></th>
-								<th><?php echo smartyTranslate(array('s'=>'You Save'),$_smarty_tpl);?>
-</th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php  $_smarty_tpl->tpl_vars['quantity_discount'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['quantity_discount']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['quantity_discounts']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['quantity_discount']->key => $_smarty_tpl->tpl_vars['quantity_discount']->value) {
-$_smarty_tpl->tpl_vars['quantity_discount']->_loop = true;
-?>
-							<tr id="quantityDiscount_<?php echo $_smarty_tpl->tpl_vars['quantity_discount']->value['id_product_attribute'];?>
-" class="quantityDiscount_<?php echo $_smarty_tpl->tpl_vars['quantity_discount']->value['id_product_attribute'];?>
-">
-							<td><?php echo intval($_smarty_tpl->tpl_vars['quantity_discount']->value['quantity']);?>
-</td>
-								<td>
-									<?php if ($_smarty_tpl->tpl_vars['quantity_discount']->value['price']>=0||$_smarty_tpl->tpl_vars['quantity_discount']->value['reduction_type']=='amount') {?>
-										<?php if ($_smarty_tpl->tpl_vars['display_discount_price']->value) {?>
-											<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['productPrice']->value-floatval($_smarty_tpl->tpl_vars['quantity_discount']->value['real_value'])),$_smarty_tpl);?>
+	
+<style>
+.weight{
+    float: right;
+    text-align: right;
+    margin-left: -5% !important;
+}
+.weighttest{
+	color:#fff;
+	padding:21px !important;
+}
+.accordion_product.components {
+   
+    margin: 0 auto;
+    height:auto;
+    width: 670px;
+}
 
-										<?php } else { ?>
-											<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>floatval($_smarty_tpl->tpl_vars['quantity_discount']->value['real_value'])),$_smarty_tpl);?>
+.accordion_product.components > ul > li,
+.components .accordion_product-title,
+.components .accordion_product-content,
+.components .accordion_product-separator {
+    float: none;
+}
 
-										<?php }?>
-									<?php } else { ?>
-										<?php if ($_smarty_tpl->tpl_vars['display_discount_price']->value) {?>
-											<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['productPrice']->value-floatval(($_smarty_tpl->tpl_vars['productPrice']->value*$_smarty_tpl->tpl_vars['quantity_discount']->value['reduction']))),$_smarty_tpl);?>
+.accordion_product.components > ul > li {
+    //background-color: #1f1f1f;
+    //margin-right: -0px;
+    //margin-bottom: -318px
+}
 
-										<?php } else { ?>
-											<?php echo floatval($_smarty_tpl->tpl_vars['quantity_discount']->value['real_value']);?>
-%
-										<?php }?>
-									<?php }?>
-								</td>
-								<td>
-									<span><?php echo smartyTranslate(array('s'=>'Up to'),$_smarty_tpl);?>
-</span>
-									<?php if ($_smarty_tpl->tpl_vars['quantity_discount']->value['price']>=0||$_smarty_tpl->tpl_vars['quantity_discount']->value['reduction_type']=='amount') {?>
-										<?php $_smarty_tpl->tpl_vars['discountPrice'] = new Smarty_variable($_smarty_tpl->tpl_vars['productPrice']->value-floatval($_smarty_tpl->tpl_vars['quantity_discount']->value['real_value']), null, 0);?>
-									<?php } else { ?>
-										<?php $_smarty_tpl->tpl_vars['discountPrice'] = new Smarty_variable($_smarty_tpl->tpl_vars['productPrice']->value-floatval(($_smarty_tpl->tpl_vars['productPrice']->value*$_smarty_tpl->tpl_vars['quantity_discount']->value['reduction'])), null, 0);?>
-									<?php }?>
-									<?php $_smarty_tpl->tpl_vars['discountPrice'] = new Smarty_variable($_smarty_tpl->tpl_vars['discountPrice']->value*$_smarty_tpl->tpl_vars['quantity_discount']->value['quantity'], null, 0);?>
-									<?php $_smarty_tpl->tpl_vars['qtyProductPrice'] = new Smarty_variable($_smarty_tpl->tpl_vars['productPrice']->value*$_smarty_tpl->tpl_vars['quantity_discount']->value['quantity'], null, 0);?>
-									<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['qtyProductPrice']->value-$_smarty_tpl->tpl_vars['discountPrice']->value),$_smarty_tpl);?>
+.components .accordion_product-select:checked ~ .accordion_product-separator {
+    margin-right: 0px;
+    margin-bottom: 318px;
+}
 
-								</td>
-							</tr>
-							<?php } ?>
-						</tbody>
-					</table>
-				</div>
-			</section>
-		<?php }?>
-		<?php if (isset($_smarty_tpl->tpl_vars['features']->value)&&$_smarty_tpl->tpl_vars['features']->value) {?>
-			<!-- Data sheet -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading"><?php echo smartyTranslate(array('s'=>'Data sheet'),$_smarty_tpl);?>
-</h3>
-				<table class="table-data-sheet">
-					<?php  $_smarty_tpl->tpl_vars['feature'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['feature']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['features']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['feature']->key => $_smarty_tpl->tpl_vars['feature']->value) {
-$_smarty_tpl->tpl_vars['feature']->_loop = true;
-?>
-					<tr class="<?php echo smarty_function_cycle(array('values'=>"odd,even"),$_smarty_tpl);?>
-">
-						<?php if (isset($_smarty_tpl->tpl_vars['feature']->value['value'])) {?>
-						<td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['feature']->value['name'], ENT_QUOTES, 'UTF-8', true);?>
-</td>
-						<td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['feature']->value['value'], ENT_QUOTES, 'UTF-8', true);?>
-</td>
-						<?php }?>
-					</tr>
-					<?php } ?>
-				</table>
-			</section>
-			<!--end Data sheet -->
-		<?php }?>
-		<?php if ($_smarty_tpl->tpl_vars['product']->value->description) {?>
-			<!-- More info -->
-			<section class="page-product-box more_info">
-				<h3 class="page-product-heading more_info_heading"><?php echo smartyTranslate(array('s'=>'More info'),$_smarty_tpl);?>
-</h3><?php }?>
-				<?php if (isset($_smarty_tpl->tpl_vars['product']->value)&&$_smarty_tpl->tpl_vars['product']->value->description) {?>
-					<!-- full description -->
-					<div  class="rte"><?php echo $_smarty_tpl->tpl_vars['product']->value->description;?>
-</div>
-			</section>
-			<!--end  More info -->
-		<?php }?>
-		<!--HOOK_PRODUCT_TAB -->
-		<section class="page-product-box">
-			<?php echo $_smarty_tpl->tpl_vars['HOOK_PRODUCT_TAB']->value;?>
+.components .accordion_product-title,
+.components .accordion_product-select  {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    width: 90%;
+    height: 40px;
+    font-size: 25px;
+}
 
-			<?php if (isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_TAB_CONTENT']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_TAB_CONTENT']->value) {?><?php echo $_smarty_tpl->tpl_vars['HOOK_PRODUCT_TAB_CONTENT']->value;?>
-<?php }?>
-		</section>
-		<!--end HOOK_PRODUCT_TAB -->
-		<?php if (isset($_smarty_tpl->tpl_vars['accessories']->value)&&$_smarty_tpl->tpl_vars['accessories']->value) {?>
-			<!--Accessories -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading"><?php echo smartyTranslate(array('s'=>'Accessories'),$_smarty_tpl);?>
-</h3>
-				<div class="block products_block accessories-block clearfix">
-					<div class="block_content">
-						<ul id="bxslider" class="bxslider clearfix">
-							<?php  $_smarty_tpl->tpl_vars['accessory'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['accessory']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['accessories']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
- $_smarty_tpl->tpl_vars['accessory']->total= $_smarty_tpl->_count($_from);
- $_smarty_tpl->tpl_vars['accessory']->iteration=0;
- $_smarty_tpl->tpl_vars['accessory']->index=-1;
-foreach ($_from as $_smarty_tpl->tpl_vars['accessory']->key => $_smarty_tpl->tpl_vars['accessory']->value) {
-$_smarty_tpl->tpl_vars['accessory']->_loop = true;
- $_smarty_tpl->tpl_vars['accessory']->iteration++;
- $_smarty_tpl->tpl_vars['accessory']->index++;
- $_smarty_tpl->tpl_vars['accessory']->first = $_smarty_tpl->tpl_vars['accessory']->index === 0;
- $_smarty_tpl->tpl_vars['accessory']->last = $_smarty_tpl->tpl_vars['accessory']->iteration === $_smarty_tpl->tpl_vars['accessory']->total;
- $_smarty_tpl->tpl_vars['smarty']->value['foreach']['accessories_list']['first'] = $_smarty_tpl->tpl_vars['accessory']->first;
- $_smarty_tpl->tpl_vars['smarty']->value['foreach']['accessories_list']['last'] = $_smarty_tpl->tpl_vars['accessory']->last;
-?>
-								<?php if (($_smarty_tpl->tpl_vars['accessory']->value['allow_oosp']||$_smarty_tpl->tpl_vars['accessory']->value['quantity_all_versions']>0||$_smarty_tpl->tpl_vars['accessory']->value['quantity']>0)&&$_smarty_tpl->tpl_vars['accessory']->value['available_for_order']&&!isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value)) {?>
-									<?php $_smarty_tpl->tpl_vars['accessoryLink'] = new Smarty_variable($_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['accessory']->value['id_product'],$_smarty_tpl->tpl_vars['accessory']->value['link_rewrite'],$_smarty_tpl->tpl_vars['accessory']->value['category']), null, 0);?>
-									<li class="item product-box ajax_block_product<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['accessories_list']['first']) {?> first_item<?php } elseif ($_smarty_tpl->getVariable('smarty')->value['foreach']['accessories_list']['last']) {?> last_item<?php } else { ?> item<?php }?> product_accessories_description">
-										<div class="product_desc">
-											<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['accessoryLink']->value, ENT_QUOTES, 'UTF-8', true);?>
-" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['accessory']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
-" class="product-image product_image">
-												<img class="lazyOwl" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['accessory']->value['link_rewrite'],$_smarty_tpl->tpl_vars['accessory']->value['id_image'],'home_ebt'), ENT_QUOTES, 'UTF-8', true);?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['accessory']->value['legend'], ENT_QUOTES, 'UTF-8', true);?>
-" width="<?php echo $_smarty_tpl->tpl_vars['homeSize']->value['width'];?>
-" height="<?php echo $_smarty_tpl->tpl_vars['homeSize']->value['height'];?>
-"/>
-											</a>
-											<div class="block_description">
-												<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['accessoryLink']->value, ENT_QUOTES, 'UTF-8', true);?>
-" title="<?php echo smartyTranslate(array('s'=>'More'),$_smarty_tpl);?>
-" class="product_description">
-													<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate(preg_replace('!<[^>]*?>!', ' ', $_smarty_tpl->tpl_vars['accessory']->value['description_short']),25,'...');?>
+.components .accordion_product-title span {
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
 
-												</a>
-											</div>
-										</div>
-										<div class="s_title_block">
-											<h5 class="product-name">
-												<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['accessoryLink']->value, ENT_QUOTES, 'UTF-8', true);?>
-">
-													<?php echo htmlspecialchars($_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate($_smarty_tpl->tpl_vars['accessory']->value['name'],20,'...',true), ENT_QUOTES, 'UTF-8', true);?>
+.components .accordion_product-select:hover ~ .accordion_product-title,
+.components .accordion_product-select:checked ~ .accordion_product-title {
+    background-color: #3068cc;
+}
 
-												</a>
-											</h5>
-											<?php if ($_smarty_tpl->tpl_vars['accessory']->value['show_price']&&!isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value)&&!$_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value) {?>
-											<span class="price">
-												<?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value!=1) {?>
-												<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['displayWtPrice'][0][0]->displayWtPrice(array('p'=>$_smarty_tpl->tpl_vars['accessory']->value['price']),$_smarty_tpl);?>
-<?php } else { ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['displayWtPrice'][0][0]->displayWtPrice(array('p'=>$_smarty_tpl->tpl_vars['accessory']->value['price_tax_exc']),$_smarty_tpl);?>
+.components .accordion_product-title span  {	
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    margin-bottom: 0px;
+    line-height: 40px;
+}
 
-												<?php }?>
-											</span>
-											<?php }?>
-										</div>
-										<div class="clearfix" style="margin-top:5px">
-											<?php if (!$_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value&&($_smarty_tpl->tpl_vars['accessory']->value['allow_oosp']||$_smarty_tpl->tpl_vars['accessory']->value['quantity']>0)) {?>
-												<div class="no-print">
-													<a class="exclusive button ajax_add_to_cart_button" href="<?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['accessory']->value['id_product']);?>
-<?php $_tmp3=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('cart',true,null,"qty=1&amp;id_product=".$_tmp3."&amp;token=".((string)$_smarty_tpl->tpl_vars['static_token']->value)."&amp;add"), ENT_QUOTES, 'UTF-8', true);?>
-" data-id-product="<?php echo intval($_smarty_tpl->tpl_vars['accessory']->value['id_product']);?>
-" title="<?php echo smartyTranslate(array('s'=>'Add to cart'),$_smarty_tpl);?>
-">
-														<span><?php echo smartyTranslate(array('s'=>'Add to cart'),$_smarty_tpl);?>
-</span>
-													</a>
-												</div>
-											<?php }?>
-										</div>
-									</li>
-								<?php }?>
-							<?php } ?>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!--end Accessories -->
-		<?php }?>
-		<?php if (isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value) {?><?php echo $_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value;?>
-<?php }?>
-		<!-- description & features -->
-		<?php if ((isset($_smarty_tpl->tpl_vars['product']->value)&&$_smarty_tpl->tpl_vars['product']->value->description)||(isset($_smarty_tpl->tpl_vars['features']->value)&&$_smarty_tpl->tpl_vars['features']->value)||(isset($_smarty_tpl->tpl_vars['accessories']->value)&&$_smarty_tpl->tpl_vars['accessories']->value)||(isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_TAB']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_TAB']->value)||(isset($_smarty_tpl->tpl_vars['attachments']->value)&&$_smarty_tpl->tpl_vars['attachments']->value)||isset($_smarty_tpl->tpl_vars['product']->value)&&$_smarty_tpl->tpl_vars['product']->value->customizable) {?>
-			<?php if (isset($_smarty_tpl->tpl_vars['attachments']->value)&&$_smarty_tpl->tpl_vars['attachments']->value) {?>
-			<!--Download -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading"><?php echo smartyTranslate(array('s'=>'Download'),$_smarty_tpl);?>
-</h3>
-				<?php  $_smarty_tpl->tpl_vars['attachment'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['attachment']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['attachments']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
- $_smarty_tpl->tpl_vars['attachment']->total= $_smarty_tpl->_count($_from);
- $_smarty_tpl->tpl_vars['attachment']->iteration=0;
- $_smarty_tpl->tpl_vars['smarty']->value['foreach']['attachements']['iteration']=0;
-foreach ($_from as $_smarty_tpl->tpl_vars['attachment']->key => $_smarty_tpl->tpl_vars['attachment']->value) {
-$_smarty_tpl->tpl_vars['attachment']->_loop = true;
- $_smarty_tpl->tpl_vars['attachment']->iteration++;
- $_smarty_tpl->tpl_vars['attachment']->last = $_smarty_tpl->tpl_vars['attachment']->iteration === $_smarty_tpl->tpl_vars['attachment']->total;
- $_smarty_tpl->tpl_vars['smarty']->value['foreach']['attachements']['iteration']++;
- $_smarty_tpl->tpl_vars['smarty']->value['foreach']['attachements']['last'] = $_smarty_tpl->tpl_vars['attachment']->last;
-?>
-					<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['attachements']['iteration']%3==1) {?><div class="row"><?php }?>
-						<div class="col-lg-4">
-							<h4><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('attachment',true,null,"id_attachment=".((string)$_smarty_tpl->tpl_vars['attachment']->value['id_attachment'])), ENT_QUOTES, 'UTF-8', true);?>
-"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['attachment']->value['name'], ENT_QUOTES, 'UTF-8', true);?>
-</a></h4>
-							<p class="text-muted"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['attachment']->value['description'], ENT_QUOTES, 'UTF-8', true);?>
-</p>
-							<a class="btn btn-default btn-block" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('attachment',true,null,"id_attachment=".((string)$_smarty_tpl->tpl_vars['attachment']->value['id_attachment'])), ENT_QUOTES, 'UTF-8', true);?>
-">
-								<i class="icon-download"></i>
-								<?php echo smartyTranslate(array('s'=>"Download"),$_smarty_tpl);?>
- (<?php echo Tools::formatBytes($_smarty_tpl->tpl_vars['attachment']->value['file_size'],2);?>
-)
-							</a>
-							<hr>
-						</div>
-					<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['attachements']['iteration']%3==0||$_smarty_tpl->getVariable('smarty')->value['foreach']['attachements']['last']) {?></div><?php }?>
-				<?php } ?>
-			</section>
-			<!--end Download -->
-			<?php }?>
-			<?php if (isset($_smarty_tpl->tpl_vars['product']->value)&&$_smarty_tpl->tpl_vars['product']->value->customizable) {?>
-			<!--Customization -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading"><?php echo smartyTranslate(array('s'=>'Product customization'),$_smarty_tpl);?>
-</h3>
-				<!-- Customizable products -->
-				<form method="post" action="<?php echo $_smarty_tpl->tpl_vars['customizationFormTarget']->value;?>
-" enctype="multipart/form-data" id="customizationForm" class="clearfix">
-					<p class="infoCustomizable">
-						<?php echo smartyTranslate(array('s'=>'After saving your customized product, remember to add it to your cart.'),$_smarty_tpl);?>
+.components .accordion_product-content {
+    background-color: #3e3e3e;
+    color: #f5f2f0;
+    height: 316px;
+    width: 90%;
+    //padding: 27px;
+	display:none;
+}
 
-						<?php if ($_smarty_tpl->tpl_vars['product']->value->uploadable_files) {?>
-						<br />
-						<?php echo smartyTranslate(array('s'=>'Allowed file formats are: GIF, JPG, PNG'),$_smarty_tpl);?>
-<?php }?>
-					</p>
-					<?php if (intval($_smarty_tpl->tpl_vars['product']->value->uploadable_files)) {?>
-						<div class="customizableProductsFile">
-							<h5 class="product-heading-h5"><?php echo smartyTranslate(array('s'=>'Pictures'),$_smarty_tpl);?>
-</h5>
-							<ul id="uploadable_files" class="clearfix">
-								<?php echo smarty_function_counter(array('start'=>0,'assign'=>'customizationField'),$_smarty_tpl);?>
+.components .accordion_product-title,
+.components .accordion_product-select:checked ~ .accordion_product-content {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
 
-								<?php  $_smarty_tpl->tpl_vars['field'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['field']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['customizationFields']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['field']->key => $_smarty_tpl->tpl_vars['field']->value) {
-$_smarty_tpl->tpl_vars['field']->_loop = true;
-?>
-									<?php if ($_smarty_tpl->tpl_vars['field']->value['type']==0) {?>
-										<li class="customizationUploadLine<?php if ($_smarty_tpl->tpl_vars['field']->value['required']) {?> required<?php }?>"><?php $_smarty_tpl->tpl_vars['key'] = new Smarty_variable(((('pictures_').($_smarty_tpl->tpl_vars['product']->value->id)).('_')).($_smarty_tpl->tpl_vars['field']->value['id_customization_field']), null, 0);?>
-											<?php if (isset($_smarty_tpl->tpl_vars['pictures']->value[$_smarty_tpl->tpl_vars['key']->value])) {?>
-												<div class="customizationUploadBrowse">
-													<img src="<?php echo $_smarty_tpl->tpl_vars['pic_dir']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['pictures']->value[$_smarty_tpl->tpl_vars['key']->value];?>
-_small" alt="" />
-														<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getProductDeletePictureLink($_smarty_tpl->tpl_vars['product']->value,$_smarty_tpl->tpl_vars['field']->value['id_customization_field']), ENT_QUOTES, 'UTF-8', true);?>
-" title="<?php echo smartyTranslate(array('s'=>'Delete'),$_smarty_tpl);?>
-" >
-															<img src="<?php echo $_smarty_tpl->tpl_vars['img_dir']->value;?>
-icon/delete.gif" alt="<?php echo smartyTranslate(array('s'=>'Delete'),$_smarty_tpl);?>
-" class="customization_delete_icon" width="11" height="13" />
-														</a>
-												</div>
-											<?php }?>
-											<div class="customizationUploadBrowse form-group">
-												<label class="customizationUploadBrowseDescription">
-													<?php if (!empty($_smarty_tpl->tpl_vars['field']->value['name'])) {?>
-														<?php echo $_smarty_tpl->tpl_vars['field']->value['name'];?>
+/* Do not change following properties, they aren't 
+generated automatically and are common for each slider. */
+.accordion_product {
+    overflow: hidden;
+}
 
-													<?php } else { ?>
-														<?php echo smartyTranslate(array('s'=>'Please select an image file from your computer'),$_smarty_tpl);?>
+.accordion_product > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 101%;
+}
 
-													<?php }?>
-													<?php if ($_smarty_tpl->tpl_vars['field']->value['required']) {?><sup>*</sup><?php }?>
-												</label>
-												<input type="file" name="file<?php echo $_smarty_tpl->tpl_vars['field']->value['id_customization_field'];?>
-" id="img<?php echo $_smarty_tpl->tpl_vars['customizationField']->value;?>
-" class="form-control customization_block_input <?php if (isset($_smarty_tpl->tpl_vars['pictures']->value[$_smarty_tpl->tpl_vars['key']->value])) {?>filled<?php }?>" />
-											</div>
-										</li>
-										<?php echo smarty_function_counter(array(),$_smarty_tpl);?>
+.accordion_product > ul > li,
+.accordion_product-title {
+    position: relative;
+}
 
-									<?php }?>
-								<?php } ?>
-							</ul>
-						</div>
-					<?php }?>
-					<?php if (intval($_smarty_tpl->tpl_vars['product']->value->text_fields)) {?>
-						<div class="customizableProductsText">
-							<h5 class="product-heading-h5"><?php echo smartyTranslate(array('s'=>'Text'),$_smarty_tpl);?>
-</h5>
-							<ul id="text_fields">
-							<?php echo smarty_function_counter(array('start'=>0,'assign'=>'customizationField'),$_smarty_tpl);?>
+.accordion_product-select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
 
-							<?php  $_smarty_tpl->tpl_vars['field'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['field']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['customizationFields']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['field']->key => $_smarty_tpl->tpl_vars['field']->value) {
-$_smarty_tpl->tpl_vars['field']->_loop = true;
-?>
-								<?php if ($_smarty_tpl->tpl_vars['field']->value['type']==1) {?>
-									<li class="customizationUploadLine<?php if ($_smarty_tpl->tpl_vars['field']->value['required']) {?> required<?php }?>">
-										<label for ="textField<?php echo $_smarty_tpl->tpl_vars['customizationField']->value;?>
-">
-											<?php $_smarty_tpl->tpl_vars['key'] = new Smarty_variable(((('textFields_').($_smarty_tpl->tpl_vars['product']->value->id)).('_')).($_smarty_tpl->tpl_vars['field']->value['id_customization_field']), null, 0);?>
-											<?php if (!empty($_smarty_tpl->tpl_vars['field']->value['name'])) {?>
-												<?php echo $_smarty_tpl->tpl_vars['field']->value['name'];?>
+.accordion_product-title span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+}
 
-											<?php }?>
-											<?php if ($_smarty_tpl->tpl_vars['field']->value['required']) {?><sup>*</sup><?php }?>
-										</label>
-										<textarea name="textField<?php echo $_smarty_tpl->tpl_vars['field']->value['id_customization_field'];?>
-" class="form-control customization_block_input" id="textField<?php echo $_smarty_tpl->tpl_vars['customizationField']->value;?>
-" rows="3" cols="20"><?php if (isset($_smarty_tpl->tpl_vars['textFields']->value[$_smarty_tpl->tpl_vars['key']->value])) {?><?php echo stripslashes($_smarty_tpl->tpl_vars['textFields']->value[$_smarty_tpl->tpl_vars['key']->value]);?>
-<?php }?></textarea>
-									</li>
-									<?php echo smarty_function_counter(array(),$_smarty_tpl);?>
+.accordion_product-content {
+    position: relative;
+    overflow: auto;
+}
 
-								<?php }?>
-							<?php } ?>
-							</ul>
-						</div>
-					<?php }?>
-					<p id="customizedDatas">
-						<input type="hidden" name="quantityBackup" id="quantityBackup" value="" />
-						<input type="hidden" name="submitCustomizedDatas" value="1" />
-						<button class="button btn btn-default button button-small" name="saveCustomization">
-							<span><?php echo smartyTranslate(array('s'=>'Save'),$_smarty_tpl);?>
-</span>
-						</button>
-						<span id="ajax-loader" class="unvisible">
-							<img src="<?php echo $_smarty_tpl->tpl_vars['img_ps_dir']->value;?>
-loader.gif" alt="loader" />
-						</span>
-					</p>
-				</form>
-				<p class="clear required"><sup>*</sup> <?php echo smartyTranslate(array('s'=>'required fields'),$_smarty_tpl);?>
-</p>
-			</section>
-			<!--end Customization -->
-			<?php }?>
-		<?php }?>
-		<?php if (isset($_smarty_tpl->tpl_vars['packItems']->value)&&count($_smarty_tpl->tpl_vars['packItems']->value)>0) {?>
-		<section id="blockpack">
-			<h3 class="page-product-heading"><?php echo smartyTranslate(array('s'=>'Pack content'),$_smarty_tpl);?>
-</h3>
-			<?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./product-list.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('products'=>$_smarty_tpl->tpl_vars['packItems']->value), 0);?>
+.accordion_product-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+div.radio{
+opacity:0;
+}
+.accordion_product-title:hover{
+	background-color:#3068cc !important;
+	cursor:pointer;
+}
+</style>
+<script>
+$(".accordion_product-title").click(function(){
 
-		</section>
-		<?php }?>
-	<?php }?>
-</div>
+	$(".accordion_product-content").hide();
+	$(".accordion_product-title").css("background-color","#2d2d2d");
+	$(this).next(".accordion_product-content").slideDown();
+	$(this).css("background-color","#3068cc");
+	
+})
+</script>
 <?php if (isset($_GET['ad'])&&$_GET['ad']) {?><?php $_smarty_tpl->smarty->_tag_stack[] = array('addJsDefL', array('name'=>'ad')); $_block_repeat=true; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'ad'), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 <?php echo htmlspecialchars(($_smarty_tpl->tpl_vars['base_dir']->value).($_GET['ad']), ENT_QUOTES, 'UTF-8', true);?>
 <?php $_block_content = ob_get_clean(); $_block_repeat=false; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'ad'), $_block_content, $_smarty_tpl, $_block_repeat); } array_pop($_smarty_tpl->smarty->_tag_stack);?>
@@ -1163,4 +911,5 @@ loader.gif" alt="loader" />
 <?php echo smartyTranslate(array('s'=>'Uploading in progress, please be patient.','js'=>1),$_smarty_tpl);?>
 <?php $_block_content = ob_get_clean(); $_block_repeat=false; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'uploading_in_progress'), $_block_content, $_smarty_tpl, $_block_repeat); } array_pop($_smarty_tpl->smarty->_tag_stack);?>
 
-<?php }?><?php }} ?>
+<?php }?>
+<?php }} ?>

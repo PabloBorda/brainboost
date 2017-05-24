@@ -306,7 +306,7 @@
 <module name="bankwire" position="53"/>
 <module name="cheque" position="54"/>
 <module name="ps_wirepaymentment" position="55"/>
-</tab>
+<module name="mdstripe" position="56"/></tab>
 <tab class_name="AdminCarriers" display_type="slider_list">
 <module name="bpostshm" position="1"/>
 <module name="socolissimo" position="2"/>
