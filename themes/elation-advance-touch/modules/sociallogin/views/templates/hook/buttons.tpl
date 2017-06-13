@@ -30,3 +30,22 @@
 		</div>
 	{/if}
 {/foreach}
+{if $page_name == "product"}
+	<div id="quantity_wanted_p" style="margin:20px">
+			<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
+				<span><i class="icon-minus"></i></span>
+			</a>
+			
+			<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" width="100%" style="margin-left:10px;margin-right:10px"/>
+			
+			<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up ">
+				<span><i class="icon-plus"></i></span>
+			</a>
+			
+	</div>
+<td>
+<p id="add_to_cart_head" class="buttons_bottom_block no-print"> 
+	<button type="submit" id="addTocartHeader" name="Submit" class="exclusive"> <span>Add to cart</span> </button>
+</p>
+</td>
+{/if}

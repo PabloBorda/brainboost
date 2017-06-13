@@ -81,10 +81,19 @@
 				<p>{l s='You cannot place a new order from your country.'} <span class="bold">{$geolocation_country}</span></p>
 			</div>
 		{/if}
-		<script>
+			<script>
 			if($(window).width()>=600){
-			document.getElementById("block_top_menu1").style.display="none";	
-				}
+				//document.getElementById("block_top_menu1").style.display="none";	
+				$("#block_top_menu1").css("display","none");	
+			}		
+	
+			$("#addTocartHeader").click(function(){
+			    var quantity_wanted = $("#quantity_wanted").val();
+				//alert(quantity_wanted);
+				ajaxCart.add(113,"","","",quantity_wanted);//(idProduct, idCombination, addedFromProductPage, callerElement, quantity, whishlist
+				window.location.href="https://brainboost.ie/index.php?controller=order-opc"
+			});
+	
 			</script>
 		<div id="page">
 			<div class="header-container">
