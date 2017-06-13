@@ -8299,3 +8299,13 @@ div.addtocart_top {
 @media (max-width:1024px) and (min-width:768px){
 .eb-product .pb-left-column{width:49% !important;}
 }
+.eb-nav table tbody table{
+	display:none !important;
+}
+#addTocartHeader{
+    height: 110px;
+    background: #2fb4c3;
+    border: 0px;
+    border-radius: 3%;
+    color: #fff;
+}
