@@ -45,7 +45,7 @@
 	</div>
 <td>
 <p id="add_to_cart_head" class="buttons_bottom_block no-print"> 
-	<button type="submit" id="addTocartHeader" name="Submit" class="exclusive"> <span>Add to cart</span> </button>
+	<button type="submit" id="addTocartHeader" name="Submit" class="exclusive"> <span>CheckOut</span> </button>
 </p>
 </td>
 {/if}
